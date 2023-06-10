@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG by groups]">
+  <test thread-count="5" name="GRP-Regression(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.test.TestNG.TestAnnotations">
+        <methods>
+          <include name="electronicsLinkValidation"/>
+          <include name="fashionLinkValidation"/>
+          <include name="mobileLinkValidation"/>
+          <include name="logOutTest"/>
+          <include name="TestExecutionEnded"/>
+          <include name="loginTest"/>
+          <include name="bestSellerLinkValidation"/>
+          <include name="TestExecutionStarted"/>
+        </methods>
+      </class> <!-- com.test.TestNG.TestAnnotations -->
+    </classes>
+  </test> <!-- GRP-Regression(failed) -->
+</suite> <!-- Failed suite [TestNG by groups] -->
